@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documenfdsfsfsffsft</title>
+</head>
+<body>
+       
+   <!--about service section start here-->
+   {% for data in about %}
+  
+   <section class="about-detail-main-area">
+      <div class="container">
+       <div class="row">
+     
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+         <div class="about-text-detail-area">
+         <p>{{data.category_name}}</p>
+         </div> 
+         {% for h in data.category.all %}
+         <div class="about-service-list-area">
+          <ul>
+           {{h.food_name}} 
+           
+          </ul> 
+         </div>
+         {% endfor %}
+        </div> 
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+         <div class="about-img-main-area">
+         </div>
+        </div>
+       </div>
+      </div> 
+     </section>
+   
+   {% endfor %}
+</body>
+</html>

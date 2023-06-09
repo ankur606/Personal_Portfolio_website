@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+		<div id="colorlib-blog">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Blog</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Blog</span>
+						<h2>Read My Blogs</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Our Blog</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="article animate-box">
+						
+								<img class="img-responsive" src=" {% static 'images/img-1.jpg' %} " alt="html5 bootstrap by colorlib.com">
+								<div class="overlay"></div>
+								<div class="link">
+                                
+								<a href="{% url 'firstblogsPage' %}"><span class="read">Read more</h2></a>	
+								</div>
+						
+							<div class="desc">
+								<span class="meta">15, Feb 2018</span>
+								<h2><a href="blog.html">A Japanese Constellation</a></h2>
+								<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+							</div>
+						</div>
+                        <div class="article animate-box">
+						
+                            <img class="img-responsive" src=" {% static 'images/img-1.jpg' %} " alt="html5 bootstrap by colorlib.com">
+                            <div class="overlay"></div>
+                            <div class="link">
+                            
+                            <a href="{% url 'secondblogsPage' %}"><span class="read">Read more</h2></a>	
+                            </div>
+                    
+                        <div class="desc">
+                            <span class="meta">15, Feb 2018</span>
+                            <h2><a href="blog.html">A Japanese Constellation</a></h2>
+                            <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+                        </div>
+                    </div>
+                    <div class="article animate-box">
+						
+                        <img class="img-responsive" src=" {% static 'images/img-1.jpg' %} " alt="html5 bootstrap by colorlib.com">
+                        <div class="overlay"></div>
+                        <div class="link">
+                        
+                        <a href="{% url 'thirdblogsPage' %}"><span class="read">Read more</h2></a>	
+                        </div>
+                
+                    <div class="desc">
+                        <span class="meta">15, Feb 2018</span>
+                        <h2><a href="blog.html">A Japanese Constellation</a></h2>
+                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+                    </div>
+                </div>
+                </div>
+				
+			</div>
+		</div>
+        </div>
+
+        {% endblock %}

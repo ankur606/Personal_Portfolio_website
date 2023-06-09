@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="" method="post" enctype="multipart/form-data" >
+    {% csrf_token %}
+  <label for="fname">Image:</label><br>
+  <input type="file" id="image" name="image" value="John"><br>
+  
+  <input type="submit" value="Submit">
+</form> 
+<img src="{{uploaded_file_url}}" width="300" height="600" alt=""> <img src="{{sketch_url}}" width="300" height="600" >
+
+<p>Your Images in Convert Original To sketch.</p>
+
+</body>
+</html>

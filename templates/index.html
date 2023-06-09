@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1>{{message}}</h1>
+
+		<div id="colorlib-about">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold" ></h2>
+				</div>
+				<div class="row"  >
+					<div class="col-md-5 animate-box">
+						<div class="owl-carousel3">
+							<div class="item">
+								<img class="img-responsive about-img" src="{% static 'images/286777590_190677499963732_5758978567437244816_n.webp' %}" alt="html5 bootstrap template by colorlib.com">
+							</div>
+							<div class="item">
+								<img class="img-responsive about-img" src="{% static 'images/281181318_1095765391005936_7114595167408297476_n.webp' %}" alt="html5 bootstrap template by colorlib.com">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-push-1 animate-box">
+						<div class="about-desc">
+							<div class="owl-carousel3">
+								<div class="item">
+									<h2><span>Anurag</span></h2><h6 ><span> About us</span></h6>
+								</div>
+								<div class="item">
+									<h2><span>Anurag</span><span>Singh</span></h2>
+								</div>
+							</div>
+							<div class="desc">
+								<div class="rotate">
+									<h2 class="heading">About</h2>
+								</div>
+								<p style="color: black;" >A small river named Duden <a href="#">flows by their place</a> and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+								<p class="colorlib-social-icons">
+									<a href="#"><i class="icon-facebook4"></i></a>
+									<a href="#"><i class="icon-twitter3"></i></a>
+									<a href="#"><i class="icon-googleplus"></i></a>
+									<a href="#"><i class="icon-dribbble2"></i></a>
+								</p>
+								<p><a href="#" class="btn btn-primary btn-outline">Contact Me!</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<button onclick="openWhatsAppChat()">Open WhatsApp Chat</button>
+
+		<div id="colorlib-blog">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Blog</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Blog</span>
+						<h2>Read My Blogs</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Our Blog</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="owl-carousel1">
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="blog.html" class="blog-img">
+										<img class="img-responsive" src="{% static 'images/img-1.jpg' %}" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										<div class="link">
+											<span class="read">Read more</h2>
+										</div>
+									</a>
+									<div class="desc">
+										<span class="meta">15, Feb 2018</span>
+										<h2><a href="blog.html">A Japanese Constellation</a></h2>
+										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="blog.html" class="blog-img">
+										<img class="img-responsive" src="{% static 'images/img-2.jpg' %}" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										<div class="link">
+											<span class="read">Read more</h2>
+										</div>
+									</a>
+									<div class="desc">
+										<span class="meta">15, Feb 2018</span>
+										<h2><a href="blog.html">A Japanese Constellation</a></h2>
+										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="blog.html" class="blog-img">
+										<img class="img-responsive" src="{% static 'images/img-3.jpg' %}" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										<div class="link">
+											<span class="read">Read more</h2>
+										</div>
+									</a>
+									<div class="desc">
+										<span class="meta">15, Feb 2018</span>
+										<h2><a href="blog.html">A Japanese Constellation</a></h2>
+										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function openWhatsAppChat() {
+			  var phoneNumber = "1234567890"; // Replace with your phone number
+		
+			  // Generate WhatsApp link
+			  var link = "https://wa.me/" + phoneNumber;
+		
+			  // Open WhatsApp chat in a new tab
+			  window.open(link, "_blank");
+			}
+		  </script>
+{% endblock  %}
